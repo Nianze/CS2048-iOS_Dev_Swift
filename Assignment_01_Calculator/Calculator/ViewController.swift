@@ -9,14 +9,14 @@
 import UIKit
 
 enum Operator{
-    case addition
-    case substraction
-    case multiplication
-    case division
-    case reminder
-    case percentage
-    case allclear
-    case none
+    case Addition
+    case Substraction
+    case Multiplication
+    case Division
+    case Reminder
+    case Percentage
+    case Allclear
+    case None
 }
 
 class ViewController: UIViewController {
@@ -32,14 +32,14 @@ class ViewController: UIViewController {
     var isError: Bool = false
     var highlightTeg: Int = 0
     var zeroesAfterDecimal: Int = 0
-    var opt: Operator = Operator.none
+    var opt: Operator = Operator.None
 
     override func viewDidLoad() {
         super.viewDidLoad()
         numberDisplayLabel.adjustsFontSizeToFitWidth = true
     }
     
-    func digitUpdate(_ keyValue: String) {
+    func digitUpdate(keyValue: String) {
         print(keyValue)
         if keyValue >= "0" && keyValue <= "9" {
             if result == 0.0 {
@@ -56,9 +56,9 @@ class ViewController: UIViewController {
         }
     }
     
-    func precisionCount(_ result: Double, keyValue: String) {
-        if result.truncatingRemainder(dividingBy: 1) != 0 {
-            counter = String(result).characters.split(separator: ".")[1].count
+    func precisionCount(result: Double, keyValue: String) {
+        if result % 1 != 0 {
+            counter = String(result).characters.split(".")[1].count
         } else {
             counter = 0
         }
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
     }
     
     
-    func showResult(_ result: Double) {
+    func showResult(result: Double) {
         if isError {
             numberDisplayLabel.text! = "Error"
             return
@@ -79,23 +79,23 @@ class ViewController: UIViewController {
         }
         let cleanValue: String = String(format: "%.\(counter)f", show)
         numberDisplayLabel.text! = cleanValue
-        if decimal && !numberDisplayLabel.text!.contains(".") {
+        if decimal && !numberDisplayLabel.text!.containsString(".") {
             numberDisplayLabel.text! += "."
         }
     }
     
-    func calculate(_ num1: Double, num2: Double, opt: Operator) {
+    func calculate(num1: Double, num2: Double, opt: Operator) {
         switch opt {
-        case Operator.addition:
+        case Operator.Addition:
             result = num1 + num2
             break
-        case Operator.substraction:
+        case Operator.Substraction:
             result = num1 - num2
             break
-        case Operator.multiplication:
+        case Operator.Multiplication:
             result = num1 * num2
             break
-        case Operator.division:
+        case Operator.Division:
             if num2 != 0.0 {
                 result = num1 / num2
                 break
@@ -103,7 +103,7 @@ class ViewController: UIViewController {
                 isError = true
                 break
             }
-        case Operator.none:
+        case Operator.None:
             break
         default:
             isError = true
@@ -120,11 +120,11 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func numpadButtonPressed(_ sender: UIButton) {
+    @IBAction func numpadButtonPressed(sender: UIButton) {
         showBuffer = false
         if highlightTeg != 0 {
             let button = self.view.viewWithTag(highlightTeg) as? UIButton
-            button?.isSelected = false
+            button?.selected = false
             highlightTeg = 0
         }
 
@@ -136,30 +136,30 @@ class ViewController: UIViewController {
             break
         case "＋":
             update()
-            opt = Operator.addition
+            opt = Operator.Addition
             showBuffer = true
-            sender.isSelected = true
+            sender.selected = true
             highlightTeg = 1
             break
         case "－":
             update()
-            opt = Operator.substraction
+            opt = Operator.Substraction
             showBuffer = true
-            sender.isSelected = true
+            sender.selected = true
             highlightTeg = 2
             break
         case "×":
             update()
-            opt = Operator.multiplication
+            opt = Operator.Multiplication
             showBuffer = true
-            sender.isSelected = true
+            sender.selected = true
             highlightTeg = 3
             break
         case "÷":
             update()
-            opt = Operator.division
+            opt = Operator.Division
             showBuffer = true
-            sender.isSelected = true
+            sender.selected = true
             highlightTeg = 4
             break
         case "%":
@@ -177,7 +177,7 @@ class ViewController: UIViewController {
             buffer = 0.0
             decimal = false
             counter = 0
-            opt = Operator.none
+            opt = Operator.None
             lastNum = 0.0
             canReApply = false
             isError = false
