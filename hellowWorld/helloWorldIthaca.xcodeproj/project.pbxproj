@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEF773071D847F6A002CE7C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF773061D847F6A002CE7C9 /* AppDelegate.swift */; };
+		CEF773091D847F6A002CE7C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF773081D847F6A002CE7C9 /* ViewController.swift */; };
+		CEF7730C1D847F6A002CE7C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF7730A1D847F6A002CE7C9 /* Main.storyboard */; };
+		CEF7730E1D847F6A002CE7C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF7730D1D847F6A002CE7C9 /* Assets.xcassets */; };
+		CEF773111D847F6A002CE7C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF7730F1D847F6A002CE7C9 /* LaunchScreen.storyboard */; };
+		CEF7731C1D847F6A002CE7C9 /* helloWorldIthacaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7731B1D847F6A002CE7C9 /* helloWorldIthacaTests.swift */; };
+		CEF773271D847F6A002CE7C9 /* helloWorldIthacaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF773261D847F6A002CE7C9 /* helloWorldIthacaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEF773181D847F6A002CE7C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEF772FB1D847F6A002CE7C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEF773021D847F6A002CE7C9;
+			remoteInfo = helloWorldIthaca;
+		};
+		CEF773231D847F6A002CE7C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEF772FB1D847F6A002CE7C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEF773021D847F6A002CE7C9;
+			remoteInfo = helloWorldIthaca;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEF773031D847F6A002CE7C9 /* helloWorldIthaca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloWorldIthaca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF773061D847F6A002CE7C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEF773081D847F6A002CE7C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEF7730B1D847F6A002CE7C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEF7730D1D847F6A002CE7C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEF773101D847F6A002CE7C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEF773121D847F6A002CE7C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF773171D847F6A002CE7C9 /* helloWorldIthacaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloWorldIthacaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF7731B1D847F6A002CE7C9 /* helloWorldIthacaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloWorldIthacaTests.swift; sourceTree = "<group>"; };
+		CEF7731D1D847F6A002CE7C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF773221D847F6A002CE7C9 /* helloWorldIthacaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloWorldIthacaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF773261D847F6A002CE7C9 /* helloWorldIthacaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloWorldIthacaUITests.swift; sourceTree = "<group>"; };
+		CEF773281D847F6A002CE7C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEF773001D847F6A002CE7C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF773141D847F6A002CE7C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF7731F1D847F6A002CE7C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEF772FA1D847F6A002CE7C9 = {
+			isa = PBXGroup;
+			children = (
+				CEF773051D847F6A002CE7C9 /* helloWorldIthaca */,
+				CEF7731A1D847F6A002CE7C9 /* helloWorldIthacaTests */,
+				CEF773251D847F6A002CE7C9 /* helloWorldIthacaUITests */,
+				CEF773041D847F6A002CE7C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEF773041D847F6A002CE7C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEF773031D847F6A002CE7C9 /* helloWorldIthaca.app */,
+				CEF773171D847F6A002CE7C9 /* helloWorldIthacaTests.xctest */,
+				CEF773221D847F6A002CE7C9 /* helloWorldIthacaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEF773051D847F6A002CE7C9 /* helloWorldIthaca */ = {
+			isa = PBXGroup;
+			children = (
+				CEF773061D847F6A002CE7C9 /* AppDelegate.swift */,
+				CEF773081D847F6A002CE7C9 /* ViewController.swift */,
+				CEF7730A1D847F6A002CE7C9 /* Main.storyboard */,
+				CEF7730D1D847F6A002CE7C9 /* Assets.xcassets */,
+				CEF7730F1D847F6A002CE7C9 /* LaunchScreen.storyboard */,
+				CEF773121D847F6A002CE7C9 /* Info.plist */,
+			);
+			path = helloWorldIthaca;
+			sourceTree = "<group>";
+		};
+		CEF7731A1D847F6A002CE7C9 /* helloWorldIthacaTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEF7731B1D847F6A002CE7C9 /* helloWorldIthacaTests.swift */,
+				CEF7731D1D847F6A002CE7C9 /* Info.plist */,
+			);
+			path = helloWorldIthacaTests;
+			sourceTree = "<group>";
+		};
+		CEF773251D847F6A002CE7C9 /* helloWorldIthacaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEF773261D847F6A002CE7C9 /* helloWorldIthacaUITests.swift */,
+				CEF773281D847F6A002CE7C9 /* Info.plist */,
+			);
+			path = helloWorldIthacaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEF773021D847F6A002CE7C9 /* helloWorldIthaca */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF7732B1D847F6A002CE7C9 /* Build configuration list for PBXNativeTarget "helloWorldIthaca" */;
+			buildPhases = (
+				CEF772FF1D847F6A002CE7C9 /* Sources */,
+				CEF773001D847F6A002CE7C9 /* Frameworks */,
+				CEF773011D847F6A002CE7C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = helloWorldIthaca;
+			productName = helloWorldIthaca;
+			productReference = CEF773031D847F6A002CE7C9 /* helloWorldIthaca.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEF773161D847F6A002CE7C9 /* helloWorldIthacaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF7732E1D847F6A002CE7C9 /* Build configuration list for PBXNativeTarget "helloWorldIthacaTests" */;
+			buildPhases = (
+				CEF773131D847F6A002CE7C9 /* Sources */,
+				CEF773141D847F6A002CE7C9 /* Frameworks */,
+				CEF773151D847F6A002CE7C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEF773191D847F6A002CE7C9 /* PBXTargetDependency */,
+			);
+			name = helloWorldIthacaTests;
+			productName = helloWorldIthacaTests;
+			productReference = CEF773171D847F6A002CE7C9 /* helloWorldIthacaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEF773211D847F6A002CE7C9 /* helloWorldIthacaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF773311D847F6A002CE7C9 /* Build configuration list for PBXNativeTarget "helloWorldIthacaUITests" */;
+			buildPhases = (
+				CEF7731E1D847F6A002CE7C9 /* Sources */,
+				CEF7731F1D847F6A002CE7C9 /* Frameworks */,
+				CEF773201D847F6A002CE7C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEF773241D847F6A002CE7C9 /* PBXTargetDependency */,
+			);
+			name = helloWorldIthacaUITests;
+			productName = helloWorldIthacaUITests;
+			productReference = CEF773221D847F6A002CE7C9 /* helloWorldIthacaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEF772FB1D847F6A002CE7C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = lnz;
+				TargetAttributes = {
+					CEF773021D847F6A002CE7C9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5LBETDGZQ6;
+					};
+					CEF773161D847F6A002CE7C9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5LBETDGZQ6;
+						TestTargetID = CEF773021D847F6A002CE7C9;
+					};
+					CEF773211D847F6A002CE7C9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5LBETDGZQ6;
+						TestTargetID = CEF773021D847F6A002CE7C9;
+					};
+				};
+			};
+			buildConfigurationList = CEF772FE1D847F6A002CE7C9 /* Build configuration list for PBXProject "helloWorldIthaca" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEF772FA1D847F6A002CE7C9;
+			productRefGroup = CEF773041D847F6A002CE7C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEF773021D847F6A002CE7C9 /* helloWorldIthaca */,
+				CEF773161D847F6A002CE7C9 /* helloWorldIthacaTests */,
+				CEF773211D847F6A002CE7C9 /* helloWorldIthacaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEF773011D847F6A002CE7C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF773111D847F6A002CE7C9 /* LaunchScreen.storyboard in Resources */,
+				CEF7730E1D847F6A002CE7C9 /* Assets.xcassets in Resources */,
+				CEF7730C1D847F6A002CE7C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF773151D847F6A002CE7C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF773201D847F6A002CE7C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEF772FF1D847F6A002CE7C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF773091D847F6A002CE7C9 /* ViewController.swift in Sources */,
+				CEF773071D847F6A002CE7C9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF773131D847F6A002CE7C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF7731C1D847F6A002CE7C9 /* helloWorldIthacaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF7731E1D847F6A002CE7C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF773271D847F6A002CE7C9 /* helloWorldIthacaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEF773191D847F6A002CE7C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEF773021D847F6A002CE7C9 /* helloWorldIthaca */;
+			targetProxy = CEF773181D847F6A002CE7C9 /* PBXContainerItemProxy */;
+		};
+		CEF773241D847F6A002CE7C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEF773021D847F6A002CE7C9 /* helloWorldIthaca */;
+			targetProxy = CEF773231D847F6A002CE7C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEF7730A1D847F6A002CE7C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF7730B1D847F6A002CE7C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEF7730F1D847F6A002CE7C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF773101D847F6A002CE7C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEF773291D847F6A002CE7C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEF7732A1D847F6A002CE7C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEF7732C1D847F6A002CE7C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = helloWorldIthaca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lnz.helloWorldIthaca;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEF7732D1D847F6A002CE7C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = helloWorldIthaca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lnz.helloWorldIthaca;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CEF7732F1D847F6A002CE7C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = helloWorldIthacaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lnz.helloWorldIthacaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/helloWorldIthaca.app/helloWorldIthaca";
+			};
+			name = Debug;
+		};
+		CEF773301D847F6A002CE7C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = helloWorldIthacaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lnz.helloWorldIthacaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/helloWorldIthaca.app/helloWorldIthaca";
+			};
+			name = Release;
+		};
+		CEF773321D847F6A002CE7C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = helloWorldIthacaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lnz.helloWorldIthacaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = helloWorldIthaca;
+			};
+			name = Debug;
+		};
+		CEF773331D847F6A002CE7C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = helloWorldIthacaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lnz.helloWorldIthacaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = helloWorldIthaca;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEF772FE1D847F6A002CE7C9 /* Build configuration list for PBXProject "helloWorldIthaca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF773291D847F6A002CE7C9 /* Debug */,
+				CEF7732A1D847F6A002CE7C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF7732B1D847F6A002CE7C9 /* Build configuration list for PBXNativeTarget "helloWorldIthaca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF7732C1D847F6A002CE7C9 /* Debug */,
+				CEF7732D1D847F6A002CE7C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEF7732E1D847F6A002CE7C9 /* Build configuration list for PBXNativeTarget "helloWorldIthacaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF7732F1D847F6A002CE7C9 /* Debug */,
+				CEF773301D847F6A002CE7C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEF773311D847F6A002CE7C9 /* Build configuration list for PBXNativeTarget "helloWorldIthacaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF773321D847F6A002CE7C9 /* Debug */,
+				CEF773331D847F6A002CE7C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEF772FB1D847F6A002CE7C9 /* Project object */;
+}
