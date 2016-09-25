@@ -115,3 +115,24 @@ import Foundation
 let parsedExpr = NSExpression (format: "log(x)")
 
 let vars = ["x": 9.0]
+
+// 2016 09 24
+
+let defaultColorName = "red"
+var userDefinedColorName: String? // defaults to nil
+
+var colorNameToUse = userDefinedColorName ?? defaultColorName
+
+userDefinedColorName = "green"
+colorNameToUse = userDefinedColorName ?? defaultColorName
+
+anArray.append(5)
+anArray += [6,7,8]
+anArray[4...6] = [1,2,3,4]
+anArray
+
+
+
+
+
+
