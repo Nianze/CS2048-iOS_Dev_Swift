@@ -24,6 +24,36 @@ class ViewController: UIViewController, UITextFieldDelegate, FunctionPlottingVie
         plottingView.crosshairLoc = tapLocation
         plottingView.setNeedsDisplay()
     }
+
+    @IBAction func panGestureRecognized(sender: UIPanGestureRecognizer) {
+        //print("called panGestureRecognized")
+        if sender.state == UIGestureRecognizerState.Began {
+            plottingView.concatTrans()
+        }
+        plottingView.transFactor = sender.translationInView(plottingView)
+        plottingView.setNeedsDisplay()
+        if sender.state == UIGestureRecognizerState.Ended {
+            plottingView.concatTrans()
+        }
+    }
+    
+    
+    @IBAction func longPressGestureRecognized(sender: UILongPressGestureRecognizer) {
+        print("called longPressGestureRecognized")
+        if sender.state == UIGestureRecognizerState.Ended {
+            plottingView.crosshairSwitch.toggle()
+        }
+        print(plottingView.crosshairSwitch)
+        plottingView.setNeedsDisplay()
+    }
+    
+    @IBAction func pinchGestureRecognized(sender: UIPinchGestureRecognizer) {
+        if sender.state == UIGestureRecognizerState.Began {
+            plottingView.concatScale()
+        }
+        plottingView.scaleFactor = sender.scale
+        plottingView.setNeedsDisplay()
+    }
     
     // MARK: - UITextFieldDelegate methods
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -32,6 +62,7 @@ class ViewController: UIViewController, UITextFieldDelegate, FunctionPlottingVie
         plottingView.setNeedsDisplay() // Forces redraw!
         return false
     }
+    
     
     // MARK: - Plotting View Delegate Protocol
     func functionToPlot() -> (Double -> Double)? {

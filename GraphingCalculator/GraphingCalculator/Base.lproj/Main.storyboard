@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -23,6 +23,9 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="hen-hs-hCz" appends="YES" id="ohF-88-RfI"/>
+                                    <outletCollection property="gestureRecognizers" destination="Ng5-h3-I2l" appends="YES" id="WHJ-ll-Y8d"/>
+                                    <outletCollection property="gestureRecognizers" destination="KmI-IB-tqx" appends="YES" id="JOc-J5-KWJ"/>
+                                    <outletCollection property="gestureRecognizers" destination="dL5-0V-1hv" appends="YES" id="o8i-fS-cSq"/>
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="f(x) =" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCo-ud-Nq3">
@@ -51,6 +54,21 @@
                         <action selector="tapGestureRecognized:" destination="BYZ-38-t0r" id="Dhx-FU-6Q4"/>
                     </connections>
                 </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Ng5-h3-I2l">
+                    <connections>
+                        <action selector="panGestureRecognized:" destination="BYZ-38-t0r" id="t38-ux-AmT"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="KmI-IB-tqx">
+                    <connections>
+                        <action selector="longPressGestureRecognized:" destination="BYZ-38-t0r" id="CJL-pQ-1rA"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pinchGestureRecognizer id="dL5-0V-1hv">
+                    <connections>
+                        <action selector="pinchGestureRecognized:" destination="BYZ-38-t0r" id="3hp-Dx-T5q"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="274" y="293"/>
         </scene>
