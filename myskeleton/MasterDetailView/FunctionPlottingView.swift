@@ -48,14 +48,14 @@ class FunctionPlottingView: UIView {
     }
     
     func drawFunction(rect: CGRect) {
-        
+
         #if TARGET_INTERFACE_BUILDER
             let f = { (x: Double) -> Double in x * x }
         #else
             if delegate == nil {
                 return
             }
-
+            
             let f = delegate?.functionToPlot()
             if f == nil {
                 return
@@ -92,12 +92,12 @@ class FunctionPlottingView: UIView {
         // X Axis
         path.moveToPoint(CGPoint(x: 0.0, y: rect.midY))
         path.addLineToPoint(CGPoint(x: rect.maxX, y:rect.midY))
-        axisColor.setStroke()
+        UIColor.blueColor().setStroke()
         
         // Y Axis
         path.moveToPoint(CGPoint(x: rect.midX, y: 0))
         path.addLineToPoint(CGPoint(x: rect.midX, y:rect.maxY))
-        axisColor.setStroke()
+        UIColor.blueColor().setStroke()
         
         path.stroke() // <- Does the actual drawing!!!
         

@@ -2,7 +2,7 @@
 //  TableViewController.swift
 //  MasterDetailView
 //
-//  Created by Daniel Hauagge on 9/24/16.
+//  Created by lnz on 9/24/16.
 //  Copyright © 2016 CS2048 Instructor. All rights reserved.
 //
 
@@ -10,57 +10,64 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
-    // var functionsDB = ["x", "x**2", "x**3"]
+    //var functionsDB = ["x", "x**2", "x**3"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        
         // Subscribe to notifications from our model
         NSNotificationCenter.defaultCenter().addObserverForName("FUNCTIONS_DB_CHANGED",
-                                                                object: FunctionsDB.sharedInstance,
-                                                                queue: nil)
-        { (NSNotification) in
-            self.tableView.reloadData()
+                                                         object: FunctionDB.sharedInstance,
+                                                         queue: nil){
+            (NSNotificationCenter) in self.tableView.reloadData()
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return FunctionsDB.sharedInstance.functions.count
+        return FunctionDB.sharedInstance.functions.count
     }
-
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("functionCellReusableID", forIndexPath: indexPath) as! TableViewCell
-
+        
         // indexPath.section <- in case you have multiple sections
         
-        // The basic UITableViewCell has two labels (although the detailTextLabel 
+        // The basic UITableViewCell has two labels (although the detailTextLabel
         // doesn't show up in the basic style)
-//        cell.detailTextLabel?.text = FunctionsDB.sharedInstance.functions[indexPath.row]
-        cell.functionLabel.text = FunctionsDB.sharedInstance.functions[indexPath.row]
-//        cell.textLabel?.text = "f(x) ="
+        //cell.detailTextLabel?.text = FunctionDB.sharedInstance.functions[indexPath.row]
+        cell.functionLabel.text = FunctionDB.sharedInstance.functions[indexPath.row]
+        //cell.textLabel?.text = "f(x) ="
+        return cell
+    }
+
+    /*
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+
+        // Configure the cell...
 
         return cell
     }
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -97,14 +104,13 @@ class TableViewController: UITableViewController {
     }
     */
 
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        
-        // sender: in our case the table view cell that was clicked
+        //Get the new view controller using segue.destinationViewController.
+        //Pass the selected object to the new view controller.
         
         // segue.identifier
         
@@ -113,5 +119,7 @@ class TableViewController: UITableViewController {
         
         dst.expressionFromSegue = cell.functionLabel.text!
         dst.expressionIdxFromSegue = tableView.indexPathForCell(cell)?.row
+        
     }
+
 }

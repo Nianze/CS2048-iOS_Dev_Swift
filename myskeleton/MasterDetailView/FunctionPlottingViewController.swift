@@ -40,10 +40,10 @@ class FunctionPlottingViewController: UIViewController, UITextFieldDelegate, Fun
         if let idx = expressionIdxFromSegue {
             let expr = expressionEntryTextField.text!
             
-            FunctionsDB.sharedInstance.functions[idx] = expr
+            FunctionDB.sharedInstance.functions[idx] = expr
         }
         
-        for expr in FunctionsDB.sharedInstance.functions {
+        for expr in FunctionDB.sharedInstance.functions {
             print("-> \(expr)")
         }
         

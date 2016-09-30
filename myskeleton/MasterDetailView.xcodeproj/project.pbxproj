@@ -14,9 +14,9 @@
 		65A372921D9476CF00C1A384 /* FunctionPlottingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A372911D9476CF00C1A384 /* FunctionPlottingView.swift */; };
 		65A372961D9476EE00C1A384 /* TryCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A372951D9476EE00C1A384 /* TryCatch.m */; };
 		65A372981D94779300C1A384 /* FunctionPlottingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A372971D94779300C1A384 /* FunctionPlottingViewController.swift */; };
-		65A372BC1D96ED6C00C1A384 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A372BB1D96ED6C00C1A384 /* TableViewController.swift */; };
-		65A372DC1D9703FE00C1A384 /* FunctionsDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A372DB1D9703FE00C1A384 /* FunctionsDB.swift */; };
-		65A372DE1D970C6200C1A384 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A372DD1D970C6200C1A384 /* TableViewCell.swift */; };
+		CE5361091D96F5CE00D50140 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5361081D96F5CE00D50140 /* TableViewController.swift */; };
+		CE5361451D97041900D50140 /* FunctionDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5361441D97041900D50140 /* FunctionDB.swift */; };
+		CE5361491D970E3100D50140 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5361481D970E3100D50140 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +31,9 @@
 		65A372941D9476ED00C1A384 /* MasterDetailView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MasterDetailView-Bridging-Header.h"; sourceTree = "<group>"; };
 		65A372951D9476EE00C1A384 /* TryCatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TryCatch.m; sourceTree = "<group>"; };
 		65A372971D94779300C1A384 /* FunctionPlottingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionPlottingViewController.swift; sourceTree = "<group>"; };
-		65A372BB1D96ED6C00C1A384 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		65A372DB1D9703FE00C1A384 /* FunctionsDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsDB.swift; sourceTree = "<group>"; };
-		65A372DD1D970C6200C1A384 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CE5361081D96F5CE00D50140 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		CE5361441D97041900D50140 /* FunctionDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionDB.swift; sourceTree = "<group>"; };
+		CE5361481D970E3100D50140 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +68,6 @@
 			children = (
 				65A3727B1D945F7100C1A384 /* AppDelegate.swift */,
 				65A3727F1D945F7100C1A384 /* Main.storyboard */,
-				65A372DD1D970C6200C1A384 /* TableViewCell.swift */,
-				65A372BB1D96ED6C00C1A384 /* TableViewController.swift */,
-				65A372DB1D9703FE00C1A384 /* FunctionsDB.swift */,
 				65A372971D94779300C1A384 /* FunctionPlottingViewController.swift */,
 				65A372911D9476CF00C1A384 /* FunctionPlottingView.swift */,
 				65A372821D945F7100C1A384 /* Assets.xcassets */,
@@ -79,6 +76,9 @@
 				65A372931D9476E600C1A384 /* TryCatch.h */,
 				65A372951D9476EE00C1A384 /* TryCatch.m */,
 				65A372941D9476ED00C1A384 /* MasterDetailView-Bridging-Header.h */,
+				CE5361081D96F5CE00D50140 /* TableViewController.swift */,
+				CE5361441D97041900D50140 /* FunctionDB.swift */,
+				CE5361481D970E3100D50140 /* TableViewCell.swift */,
 			);
 			path = MasterDetailView;
 			sourceTree = "<group>";
@@ -115,6 +115,7 @@
 				TargetAttributes = {
 					65A372771D945F7100C1A384 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5LBETDGZQ6;
 					};
 				};
 			};
@@ -155,12 +156,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				65A3727C1D945F7100C1A384 /* AppDelegate.swift in Sources */,
-				65A372DC1D9703FE00C1A384 /* FunctionsDB.swift in Sources */,
 				65A372921D9476CF00C1A384 /* FunctionPlottingView.swift in Sources */,
 				65A372961D9476EE00C1A384 /* TryCatch.m in Sources */,
-				65A372BC1D96ED6C00C1A384 /* TableViewController.swift in Sources */,
-				65A372DE1D970C6200C1A384 /* TableViewCell.swift in Sources */,
+				CE5361091D96F5CE00D50140 /* TableViewController.swift in Sources */,
 				65A372981D94779300C1A384 /* FunctionPlottingViewController.swift in Sources */,
+				CE5361491D970E3100D50140 /* TableViewCell.swift in Sources */,
+				CE5361451D97041900D50140 /* FunctionDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,10 +277,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MasterDetailView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Cornell-University.MasterDetailView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MasterDetailView/MasterDetailView-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -290,10 +294,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MasterDetailView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Cornell-University.MasterDetailView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MasterDetailView/MasterDetailView-Bridging-Header.h";
 			};
 			name = Release;
