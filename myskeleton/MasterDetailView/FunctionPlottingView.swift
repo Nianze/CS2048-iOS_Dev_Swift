@@ -82,6 +82,7 @@ class FunctionPlottingView: UIView {
             }
             prevP = p
         }
+        path.lineWidth = 2
         UIColor.redColor().setStroke()
         path.stroke()
     }

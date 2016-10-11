@@ -1,19 +1,15 @@
 //
-//  TableViewCell.swift
+//  TableViewHeader.swift
 //  MasterDetailView
 //
-//  Created by lnz on 9/24/16.
+//  Created by lnz on 10/4/16.
 //  Copyright © 2016 CS2048 Instructor. All rights reserved.
 //
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class TableViewHeader: UITableViewCell {
 
-    @IBOutlet weak var functionLabel: UILabel!
-    
-    @IBOutlet weak var functionImage: UIImageView!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

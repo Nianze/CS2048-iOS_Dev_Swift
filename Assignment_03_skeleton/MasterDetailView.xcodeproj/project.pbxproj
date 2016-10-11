@@ -17,6 +17,8 @@
 		65A372BC1D96ED6C00C1A384 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A372BB1D96ED6C00C1A384 /* TableViewController.swift */; };
 		65A372DC1D9703FE00C1A384 /* FunctionsDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A372DB1D9703FE00C1A384 /* FunctionsDB.swift */; };
 		65A372DE1D970C6200C1A384 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A372DD1D970C6200C1A384 /* TableViewCell.swift */; };
+		CEA384131DA4274D00D970B7 /* CustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA384121DA4274D00D970B7 /* CustomHeaderCell.swift */; };
+		CEA384151DA44FBC00D970B7 /* Buttons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA384141DA44FBC00D970B7 /* Buttons.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		65A372BB1D96ED6C00C1A384 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		65A372DB1D9703FE00C1A384 /* FunctionsDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsDB.swift; sourceTree = "<group>"; };
 		65A372DD1D970C6200C1A384 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CEA384121DA4274D00D970B7 /* CustomHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderCell.swift; sourceTree = "<group>"; };
+		CEA384141DA44FBC00D970B7 /* Buttons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Buttons.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +72,10 @@
 			children = (
 				65A3727B1D945F7100C1A384 /* AppDelegate.swift */,
 				65A3727F1D945F7100C1A384 /* Main.storyboard */,
+				CEA384121DA4274D00D970B7 /* CustomHeaderCell.swift */,
 				65A372DD1D970C6200C1A384 /* TableViewCell.swift */,
 				65A372BB1D96ED6C00C1A384 /* TableViewController.swift */,
+				CEA384141DA44FBC00D970B7 /* Buttons.xcassets */,
 				65A372DB1D9703FE00C1A384 /* FunctionsDB.swift */,
 				65A372971D94779300C1A384 /* FunctionPlottingViewController.swift */,
 				65A372911D9476CF00C1A384 /* FunctionPlottingView.swift */,
@@ -144,6 +150,7 @@
 				65A372861D945F7100C1A384 /* LaunchScreen.storyboard in Resources */,
 				65A372831D945F7100C1A384 /* Assets.xcassets in Resources */,
 				65A372811D945F7100C1A384 /* Main.storyboard in Resources */,
+				CEA384151DA44FBC00D970B7 /* Buttons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +166,7 @@
 				65A372921D9476CF00C1A384 /* FunctionPlottingView.swift in Sources */,
 				65A372961D9476EE00C1A384 /* TryCatch.m in Sources */,
 				65A372BC1D96ED6C00C1A384 /* TableViewController.swift in Sources */,
+				CEA384131DA4274D00D970B7 /* CustomHeaderCell.swift in Sources */,
 				65A372DE1D970C6200C1A384 /* TableViewCell.swift in Sources */,
 				65A372981D94779300C1A384 /* FunctionPlottingViewController.swift in Sources */,
 			);

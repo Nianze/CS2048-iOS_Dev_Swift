@@ -39,8 +39,13 @@ class FunctionPlottingViewController: UIViewController, UITextFieldDelegate, Fun
         
         if let idx = expressionIdxFromSegue {
             let expr = expressionEntryTextField.text!
-            
             FunctionDB.sharedInstance.functions[idx] = expr
+            
+            UIGraphicsBeginImageContextWithOptions(plottingView.frame.size, true, 0.0)
+            plottingView.drawViewHierarchyInRect(plottingView.frame, afterScreenUpdates: true)
+            let thumbnail = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            FunctionDB.sharedInstance.thumbnails[idx] = thumbnail
         }
         
         for expr in FunctionDB.sharedInstance.functions {

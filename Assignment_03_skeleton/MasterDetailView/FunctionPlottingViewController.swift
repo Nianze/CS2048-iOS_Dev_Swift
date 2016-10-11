@@ -52,7 +52,6 @@ class FunctionPlottingViewController: UIViewController, UITextFieldDelegate, Fun
     
     // MARK: - Plotting View Delegate Protocol
     func functionToPlot() -> (Double -> Double)? {
-        
         if expressionEntryTextField.text == nil {
             return nil
         }
@@ -70,8 +69,7 @@ class FunctionPlottingViewController: UIViewController, UITextFieldDelegate, Fun
         
         func x2(x: Double) -> Double {
             let vars = ["x": x]
-            return parsedExpr!.expressionValueWithObject(vars,
-                                                         context: nil).doubleValue
+            return parsedExpr!.expressionValueWithObject(vars, context: nil).doubleValue
         }
         
         return x2

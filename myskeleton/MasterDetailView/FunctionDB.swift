@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class FunctionDB {
     // Globallyt accessible instance
@@ -14,7 +15,15 @@ class FunctionDB {
     
     var functions = ["x", "x**2", "x**3"] {
         didSet {
-            NSNotificationCenter.defaultCenter().postNotificationName("FUNCTIONS_DB_CHANGED", object: self)
+            NSNotificationCenter.defaultCenter()
+                .postNotificationName("FUNCTIONS_DB_CHANGED", object: self)
         }
     }
+    
+    var thumbnails = [UIImage(named:"x")!, UIImage(named:"x**2")!, UIImage(named: "x**3")!] {
+        didSet {
+        NSNotificationCenter.defaultCenter().postNotificationName("FUNCTIONS_DB_CHANGED", object: self)
+        }
+    }
+    
 }

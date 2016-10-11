@@ -56,7 +56,32 @@ class TableViewController: UITableViewController {
         //cell.detailTextLabel?.text = FunctionDB.sharedInstance.functions[indexPath.row]
         cell.functionLabel.text = FunctionDB.sharedInstance.functions[indexPath.row]
         //cell.textLabel?.text = "f(x) ="
+        cell.functionImage.image = FunctionDB.sharedInstance.thumbnails[indexPath.row]
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return CGFloat(44.0)
+    }
+    
+    // table header
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int)-> UIView? {
+        let headerCell = tableView.dequeueReusableCellWithIdentifier("HeaderCell") as! TableViewHeader
+        // add button
+        let button = UIButton(frame:CGRect(x: 260, y: 20, width: 22, height: 22))
+        button.layer.cornerRadius = 0.5 * button.bounds.size.width
+        button.layer.borderColor = UIColor(red:0.0/255.0, green:122.0/255.0, blue:255.0/255.0, alpha:1).CGColor as CGColorRef
+        button.layer.borderWidth = 1.0
+        button.clipsToBounds = true
+        button.addTarget(self, action: #selector(addNewFunctionPressed), forControlEvents: .TouchUpInside)
+        headerCell.addSubview(button)
+        return headerCell
+    }
+    
+    func addNewFunctionPressed(sender: UIButton!) {
+        print("Button tapped")
+        FunctionDB.sharedInstance.functions.append("x")
+        FunctionDB.sharedInstance.thumbnails.append(UIImage(named:"x")!)
     }
 
     /*
@@ -120,6 +145,13 @@ class TableViewController: UITableViewController {
         dst.expressionFromSegue = cell.functionLabel.text!
         dst.expressionIdxFromSegue = tableView.indexPathForCell(cell)?.row
         
+    }
+    
+    // delete operation
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            FunctionDB.sharedInstance.functions.removeAtIndex(indexPath.row)
+        }
     }
 
 }
